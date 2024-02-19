@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *
+        {
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+        .wrapper
+        {
+            width: 80%;
+            min-height: 500px;
+            border: 1px solid #000;
+            margin: 0 auto;
+            background-image: linear-gradient(45deg,#1f4037,#99f2c8);
+        }
+        .photo
+        {
+            width: 30%;
+            height: 500px;
+            float: left;
+
+        }
+        .photo img
+        {
+            width: 100%;
+            height: 100%;
+        }
+        .text
+        {
+            width: 60%;
+            height: 300px;
+            float: right;
+            
+            padding-top: 60px;
+        }
+        .text h1
+        {
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        }
+         .text p{
+         
+            font-size: 15px;
+            padding-top: 10px;
+            text-align: justify;
+        }
+        .clearfix::after
+        {
+            content: "";
+            clear: both;
+            display: block;
+        }
+    </style>
+</head>
+<body>
+    <div class="wrapper clearfix">
+        <div class="photo">
+            <img src="imgs/ayur.avif">
+        </div>
+        <div class="text">
+            <h1>Lorem ipsum dolor sit amet consectetur<br> 
+                adipisicing elit. Sed, aut?</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore dignissimos molestiae laboriosam, autem neque iusto similique quidem consequuntur quos molestias dolores excepturi incidunt odit quisquam odio tempore. Minus, distinctio consequatur?</p>
+        </div>
+    </div>
+</body>
+</html>

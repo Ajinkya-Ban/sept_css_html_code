@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2>Function Demo</h2>
+    <script type="text/javascript">
+        // function first()
+        // {
+        //     console.log("value1")
+        // }
+        // first()
+        // function second(){
+        //     console.log("value2")
+        // }
+        // second();
+
+        // function first()
+        // {
+        //     // console.log("value1")
+        //     displayData("Value1")
+        // }
+        // first()
+        // function second(){
+        //     // console.log("value2")
+        //     displayData("value2")
+        // }
+        // second();
+        // function displayData(data)
+        // {
+        //     console.log(data)
+        // }
+
+        function sum(n1,n2, mycallback)
+        {
+            let result = n1 + n2
+            // return result
+            mycallback(result)
+        }
+
+         sum(20,30,mycallback);
+       
+
+        function mycallback(data)
+        {
+            console.log(data)
+        }
+    </script>
+</body>
+</html>
