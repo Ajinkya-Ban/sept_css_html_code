@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #d1
+        {
+            width: 550px;
+            min-height: 100px;
+            border: 1px solid #000;
+            background-color: black;
+        }
+        #d1 pre
+        {
+            color: white;
+        }
+        .d2
+        {
+            width: 550px;
+            min-height: 100px;
+            border: 1px solid #000;
+            margin-top: 10px;
+            background-color: black;
+            
+        }
+        .d2 pre
+        {
+            color: white;
+        }
+        .add
+        {
+            width: 300px;
+            min-height: 100px;
+            border: 1px solid #000;
+            margin-top: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div id="d1">
+    <pre>
+        #include &lt;stdio.h&gt;
+            int main() {
+                int n, i;
+                unsigned long long fact = 1;
+                printf("Enter an integer: ");
+                scanf("%d", &n);
+            
+                // shows error if the user enters a negative integer
+                if (n < 0)
+                    printf("Error! Factorial of a negative number doesn't exist.");
+                else {
+                    for (i = 1; i <= n; ++i) {
+                        fact *= i;
+                    }
+                    printf("Factorial of %d = %llu", n, fact);
+                }
+            
+                return 0;
+            }
+            
+    </pre>
+    
+</div>
+
+<div class="d2">
+    <pre>
+        public class Factorial {
+
+            public static void main(String[] args) {
+        
+                int num = 10;
+                long factorial = 1;
+                for(int i = 1; i <= num; ++i)
+                {
+                    // factorial = factorial * i;
+                    factorial *= i;
+                }
+                System.out.printf("Factorial of %d = %d", num, factorial);
+            }
+    </pre>
+    
+</div>
+
+<div class="add">
+<address>
+    <b>Name :</b> ABC XYZ PQR<br>
+    Address : Pune<br>
+    Mob : 98444777787
+</address>
+</div>
+</body>
+</html>
