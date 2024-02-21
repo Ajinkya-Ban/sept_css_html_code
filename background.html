@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *
+        {
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+        .box
+        {
+            width: 80%;
+            min-height: 500px;
+            border: 4px solid #000;
+            margin: auto;
+            /* background-color: lightgreen; */
+            /* background-image: linear-gradient(to right, #1D4350, #A43931); */
+            background-image: url(imgs/bullet2.jpg);
+            background-repeat: no-repeat;
+            background-size: 100% 100%;
+            background-position: center;
+            position: relative;
+        }
+        .box h1
+        {
+            color: white;
+        }
+        .main-logo-menu
+        {
+            width: 100%;
+            min-height: 60px;
+
+        }
+        .main-logo-menu .logo{
+
+            width: 35%;
+            min-height: 60px;
+            float: left;
+            /* position: absolute;
+            top:0;
+            right: 0; */
+
+        }
+        .main-logo-menu .menu{
+            width: 60%;
+            min-height: 60px;
+            float: right;
+            padding: 15px;
+            /* position: absolute;
+            top:0;
+            left: 0; */
+
+        }
+        .logo h2
+        {
+            color: white;
+            padding: 10px;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            font-size: 1.9vw;
+        }
+        .menu a
+        {
+            color: white;
+            padding: 10px;
+            text-decoration: none;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            font-size: 1.2vw;
+            
+        }
+        .menu a:hover{
+            background-color: forestgreen;
+            color: white;
+            
+            transition: 1s;
+            
+        }
+        .login-box{
+
+            width: 30%;
+            min-height: 350px;
+            border: 1px solid #fff;
+            position: absolute;
+            top:100px;
+            right: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="box">
+        <div class="main-logo-menu">
+            <div class="logo">
+                <h2>Compnay Name</h2>
+            </div>
+
+            <div class="menu">
+                <a href="#">Home</a>
+                <a href="#">About</a>
+                <a href="#">Services</a>
+                <a href="#">Products</a>
+                <a href="#">Contact</a>
+                <a href="#">Client list</a>
+            </div>
+
+        </div>
+
+        <div class="login-box">
+
+        </div>
+    </div>
+</body>
+</html>
