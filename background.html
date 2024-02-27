@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
     <style>
         *
         {
@@ -118,37 +119,50 @@
             margin: 10px 10px;
             padding: 10px 10px;
             outline: none;
-            border: none;
-            background:none;
-            color: white;
-            border-bottom: 2px solid white;
-            text-align: center;
-            /* border-radius: 10px; */
+            /* border: none; */
+            background:white;
+            /* color: white; */
+            /* border-bottom: 2px solid white; */
+            /* text-align: center; */
+            border-radius: 10px;
+            background-image: url(imgs/user.png);
+            background-repeat: no-repeat;
+            padding-left: 40px;
 
         }
-        input[type=text]::placeholder
+        input[type=text]:focus{
+            background-color: yellow;
+        }
+        /* input[type=text]::placeholder
         {
             text-align: center;
-            color: white;
-        }
+            color: black;
+        } */
         input[type=password]
         {
             width: 90%;
             margin: 10px 10px;
             padding: 10px 10px;
             outline: none;
-            border: none;
-            text-align: center;
-            /* border-radius: 10px; */
-            background:none;
-            color: white;
-            border-bottom: 2px solid white;
+            /* border: none; */
+            /* text-align: center; */
+            border-radius: 10px;
+            background:white;
+            /* color: white; */
+            /* border-bottom: 2px solid white; */
+            background-image: url(imgs/pass1.png);
+            background-repeat: no-repeat;
+            padding-left: 40px;
+            margin-top: 5px;
         }
-        input[type=password]::placeholder
+        input[type=password]:focus{
+            background-color: yellow;
+        }
+        /* input[type=password]::placeholder
         {
             text-align: center;
-            color: white;
-        }
+            color: black;
+        } */
         input[type=submit]
         {
             width: 90%;
@@ -161,12 +175,21 @@
             border: none;
             background-color: #203A43;;
             color: white;
-
+            position: relative;
         }
         input[type=submit]:hover{
 
             background-color: #0F2027;
             color: white;
+        }
+        #loginimg
+        {
+            position: absolute;
+            right: 200px;
+            bottom: 30px;
+            color:white;
+            width: 32px;
+            height: 32px;
         }
     </style>
 </head>
@@ -198,12 +221,13 @@
                 <form action="" method="post">
 
                     <label for="txtuser">Enter Username</label>
+                    
                     <input type="text" id="txtuser" placeholder="Enter username">
 
                     <label for="txtpass">Enter Password</label>
                     <input type="password" id="txtpass" placeholder="Enter username">
 
-                   <input type="submit" id="btnsubmit" value="Submit">
+                   <input type="submit" id="btnsubmit" value="Login" /><i id="loginimg" class="fa-solid fa-truck-arrow-right"></i>
                 </form>
             </div>
 
