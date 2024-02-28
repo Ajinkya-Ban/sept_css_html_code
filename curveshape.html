@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *
+        {
+            padding: 0;
+            margin: 0;
+           
+        }
+        section{
+            width: 80%;
+            height: 100vh;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 100px;
+            box-sizing: border-box;
+            position: relative;
+            background-image: linear-gradient(180deg,#355C7D,#6C5B7B,#C06C84), url(imgs/boss1.png);
+            background-blend-mode: screen;
+            background-repeat: no-repeat;
+            margin: auto;
+
+        }
+        section .content
+        {
+            max-width: 700px;
+        }
+        section .content h2{
+            font-size: 3em;
+            color: #fff;
+        }
+        section .content p{
+
+            font-size: 1.2em;
+            color: #fff;
+        }
+        section img
+        {
+            max-width: 350px;
+            position: relative;
+            z-index: 1;
+        }
+        .wave
+        {
+            position: absolute;
+            left: 0;
+            bottom: 0;
+        }
+        .grass{
+            position: absolute;
+            top:370px;
+            left: 300px;
+            
+
+        }
+        .grass img
+        {
+            width: 900px;
+            z-index: 1;
+        }
+        .custom-shape-divider-bottom-1709104268 {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+}
+
+.custom-shape-divider-bottom-1709104268 svg {
+    position: relative;
+    display: block;
+    width: calc(110% + 1.3px);
+    height: 194px;
+    transform: rotateY(180deg);
+}
+
+.custom-shape-divider-bottom-1709104268 .shape-fill {
+    fill: #FFFFFF;
+}
+    </style>
+</head>
+<body>
+    <section>
+        <div class="content">
+            <h2>Company Name</h2>
+            <p>
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Est ipsam maxime reiciendis quibusdam inventore exercitationem obcaecati molestias, quae saepe provident?
+            </p>
+        </div>
+        <img src="imgs/boss1.png">
+        <div class="custom-shape-divider-bottom-1709104268">
+            <svg class="wave" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
+                <path d="M985.66,92.83C906.67,72,823.78,31,743.84,14.19c-82.26-17.34-168.06-16.33-250.45.39-57.84,11.73-114,31.07-172,41.86A600.21,600.21,0,0,1,0,27.35V120H1200V95.8C1132.19,118.92,1055.71,111.31,985.66,92.83Z" class="shape-fill"></path>
+            </svg>
+        </div>
+        
+        
+    </section>
+    <div class="grass">
+        <img src="imgs/grass1.png">
+    </div>
+</body>
+</html>
